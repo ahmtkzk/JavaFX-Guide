@@ -23,14 +23,17 @@ public class Demo6Controller {
 
     public void login(ActionEvent event) throws IOException {
 
+        //Bilgileri yollama kısmı.
         String kadi = textBox.getText();
 
+        //Yeni scene bağladık.
         FXMLLoader loader = new FXMLLoader(getClass().getResource("demo6_second.fxml"));
         root = loader.load();
 
         HelloController2 helloController2 = loader.getController();
         helloController2.goster(kadi);
 
+        //Yeni sayfaya geçme kısmı.
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

@@ -30,8 +30,8 @@ public class Demo6Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("demo6_second.fxml"));
         root = loader.load();
 
-        HelloController2 helloController2 = loader.getController();
-        helloController2.goster(kadi);
+        Demo6Controller2 demo6Controller2 = loader.getController();
+        demo6Controller2.goster(kadi);
 
         //Yeni sayfaya geçme kısmı.
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

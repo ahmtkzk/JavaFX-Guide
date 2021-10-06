@@ -1,6 +1,6 @@
-package com.ahmtkzk.javafxguide;
+package com.ahmtkzk.javafxguide.CommBetweenControllers;
 
-
+import com.ahmtkzk.javafxguide.HelloController2;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloController {
+public class Demo6Controller {
 
     @FXML
     TextField textBox;
@@ -36,6 +36,4 @@ public class HelloController {
         stage.setScene(scene);
         stage.show();
     }
-
-
 }
